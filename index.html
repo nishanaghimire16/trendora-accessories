@@ -1,1 +1,185 @@
-<h1> this is the website where you find your perfect match accesories.</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Trendora Accessories</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #f8f8f8;
+      color: #333;
+    }
+
+    header {
+      background: #000;
+      color: #fff;
+      padding: 15px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 24px;
+      letter-spacing: 2px;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #f39c12;
+    }
+
+    .hero {
+      height: 90vh;
+      background: url('https://images.unsplash.com/photo-1617038220319-276d3cfab638') no-repeat center/cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+    }
+
+    .hero h2 {
+      font-size: 48px;
+      background: rgba(0,0,0,0.5);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .products {
+      padding: 50px;
+      text-align: center;
+    }
+
+    .products h2 {
+      margin-bottom: 30px;
+      font-size: 32px;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .card h3 {
+      padding: 15px;
+      font-size: 18px;
+    }
+
+    .card p {
+      padding: 0 15px 15px;
+      color: #777;
+    }
+
+    .btn {
+      display: inline-block;
+      margin: 15px;
+      padding: 10px 20px;
+      background: #000;
+      color: white;
+      border-radius: 25px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #f39c12;
+    }
+
+    footer {
+      background: #000;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Trendora</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Shop</a>
+    <a href="#">Trending</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Discover Trendy Accessories ✨</h2>
+</section>
+
+<section class="products">
+  <h2>🔥 Trending Now</h2>
+
+  <div class="product-grid">
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1585386959984-a4155223166b" alt="Earrings">
+      <h3>Stylish Earrings</h3>
+      <p>Elegant and trendy for every look</p>
+      <a href="#" class="btn">Shop Now</a>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb" alt="Watch">
+      <h3>Luxury Watch</h3>
+      <p>Upgrade your style with class</p>
+      <a href="#" class="btn">Shop Now</a>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1611599537845-1c94c94f1c88" alt="Bag">
+      <h3>Trendy Handbag</h3>
+      <p>Perfect match for your outfit</p>
+      <a href="#" class="btn">Shop Now</a>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Trendora Accessories | Follow Us on Instagram 💖</p>
+</footer>
+
+</body>
+</html>
