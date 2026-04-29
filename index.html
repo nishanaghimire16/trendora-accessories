@@ -24,162 +24,124 @@
     header {
       background: #000;
       color: #fff;
-      padding: 15px 50px;
+      padding: 15px 40px;
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
 
     header h1 {
-      font-size: 24px;
-      letter-spacing: 2px;
+      font-size: 20px;
     }
 
-    nav a {
-      color: white;
-      margin-left: 20px;
-      text-decoration: none;
-      transition: 0.3s;
+    .container {
+      padding: 40px;
     }
 
-    nav a:hover {
-      color: #f39c12;
-    }
-
-    .hero {
-      height: 90vh;
-      background: url('https://images.unsplash.com/photo-1617038220319-276d3cfab638') no-repeat center/cover;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    h2 {
       text-align: center;
-      color: white;
-    }
-
-    .hero h2 {
-      font-size: 48px;
-      background: rgba(0,0,0,0.5);
-      padding: 20px;
-      border-radius: 10px;
-    }
-
-    .products {
-      padding: 50px;
-      text-align: center;
-    }
-
-    .products h2 {
       margin-bottom: 30px;
-      font-size: 32px;
     }
 
-    .product-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    .cards {
+      display: flex;
       gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
     }
 
     .card {
-      background: white;
-      border-radius: 15px;
-      overflow: hidden;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-      transition: transform 0.3s;
+      background: #fff;
+      border-radius: 12px;
+      width: 280px;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: 0.3s;
     }
 
     .card:hover {
-      transform: translateY(-10px);
+      transform: translateY(-5px);
     }
 
     .card img {
       width: 100%;
-      height: 250px;
-      object-fit: cover;
+      height: 200px;
+      object-fit: cover; /* important fix */
+      border-radius: 10px;
     }
 
     .card h3 {
-      padding: 15px;
-      font-size: 18px;
+      margin: 15px 0 5px;
     }
 
     .card p {
-      padding: 0 15px 15px;
+      font-size: 14px;
       color: #777;
     }
 
     .btn {
       display: inline-block;
-      margin: 15px;
-      padding: 10px 20px;
+      margin-top: 10px;
+      padding: 8px 18px;
       background: #000;
-      color: white;
-      border-radius: 25px;
+      color: #fff;
+      border-radius: 20px;
       text-decoration: none;
-      transition: 0.3s;
-    }
-
-    .btn:hover {
-      background: #f39c12;
+      font-size: 14px;
     }
 
     footer {
-      background: #000;
-      color: white;
       text-align: center;
       padding: 20px;
       margin-top: 40px;
+      background: #000;
+      color: #fff;
     }
   </style>
 </head>
 
 <body>
 
-<header>
-  <h1>Trendora</h1>
-  <nav>
-    <a href="#">Home</a>
-    <a href="#">Shop</a>
-    <a href="#">Trending</a>
-    <a href="#">Contact</a>
-  </nav>
-</header>
+  <header>
+    <h1>Trendora Accessories</h1>
+  </header>
 
-<section class="hero">
-  <h2>Discover Trendy Accessories ✨</h2>
-</section>
+  <div class="container">
+    <h2>🔥 Trending Now</h2>
 
-<section class="products">
-  <h2>🔥 Trending Now</h2>
+    <div class="cards">
 
-  <div class="product-grid">
+      <!-- Card 1 -->
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff" alt="Shoes">
+        <h3>Stylish Shoes</h3>
+        <p>Upgrade your look with trendy sneakers</p>
+        <a href="#" class="btn">Shop Now</a>
+      </div>
 
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1585386959984-a4155223166b" alt="Earrings">
-      <h3>Stylish Earrings</h3>
-      <p>Elegant and trendy for every look</p>
-      <a href="#" class="btn">Shop Now</a>
+      <!-- Card 2 -->
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30" alt="Watch">
+        <h3>Luxury Watch</h3>
+        <p>Upgrade your style with class</p>
+        <a href="#" class="btn">Shop Now</a>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3" alt="Bag">
+        <h3>Trendy Handbag</h3>
+        <p>Perfect match for your outfit</p>
+        <a href="#" class="btn">Shop Now</a>
+      </div>
+
     </div>
-
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb" alt="Watch">
-      <h3>Luxury Watch</h3>
-      <p>Upgrade your style with class</p>
-      <a href="#" class="btn">Shop Now</a>
-    </div>
-
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1611599537845-1c94c94f1c88" alt="Bag">
-      <h3>Trendy Handbag</h3>
-      <p>Perfect match for your outfit</p>
-      <a href="#" class="btn">Shop Now</a>
-    </div>
-
   </div>
-</section>
 
-<footer>
-  <p>© 2026 Trendora Accessories | Follow Us on Instagram 💖</p>
-</footer>
+  <footer>
+    © 2026 Trendora Accessories | Follow us on Instagram ❤️
+  </footer>
 
 </body>
 </html>
